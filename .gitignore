@@ -1,0 +1,12 @@
+# Archivos de estado de Terraform
+*.tfstate
+*.tfstate.*
+
+# Directorio .terraform
+.terraform/
+
+# Archivos de registro de fallos
+crash.log
+
+# Archivos que pueden contener secretos
+*.tfvars
