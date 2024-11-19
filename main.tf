@@ -1,14 +1,14 @@
 //Codigo para definir un proveedor AWS y crear una instancia EC2 basica
 provider "aws" {
-    region = "us-east-1"
+  region = "us-east-1"
 }
 
-resource "aws_instance" "ejemplo"{
-    ami = "ami-012967cc5a8c9f891"
-    instance_type = "t2.micro"
-    tags = {
-        Name = "instancia-ejemplo"
-    }   
+resource "aws_instance" "ejemplo" {
+  ami           = "ami-012967cc5a8c9f891"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "instancia-ejemplo"
+  }
 }
 
 //Ejecuta el siguiente comando para inicializar tu proyecto Terraform:
